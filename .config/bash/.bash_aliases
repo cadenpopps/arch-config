@@ -72,6 +72,6 @@ alias grv='git remote -v'
 alias ac='/usr/bin/git --git-dir=$HOME/.arch-config.git/ --work-tree=$HOME/'
 alias aca='/usr/bin/git --git-dir=$HOME/.arch-config.git/ --work-tree=$HOME add'
 alias acc='/usr/bin/git --git-dir=$HOME/.arch-config.git/ --work-tree=$HOME commit -m'
-# alias ac=archconfig
+alias acp='/usr/bin/git --git-dir=$HOME/.arch-config.git/ --work-tree=$HOME push'
 
 
