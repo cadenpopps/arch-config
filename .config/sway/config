@@ -19,17 +19,15 @@ output DVI-D-1 resolution 1920x1080 position 0,0
 output DP-3 resolution 1920x1080 position 1920,0
 output HDMI-A-1 resolution 1920x1080 position 3840,0
 
-workspace 1 output DP-3
-workspace 4 output DP-3
-workspace 5 output DP-3
 
-workspace 2 output DVI-D-1
+workspace 1 output DVI-D-1
 workspace 4 output DVI-D-1
-workspace 5 output DVI-D-1
+
+workspace 2 output DP-3
+workspace 4 output DP-3
 
 workspace 3 output HDMI-A-1
 workspace 4 output HDMI-A-1
-workspace 5 output HDMI-A-1
 
 
 ### Idle configuration
@@ -54,6 +52,9 @@ workspace 5 output HDMI-A-1
     # Start your launcher
     bindsym $mod+space exec $menu
 
+    # Start your launcher
+    bindsym $mod+c exec google-chrome-stable | xargs swaymsg exec --
+
     # Kill focused window
     bindsym $mod+w kill
 
@@ -64,7 +65,7 @@ workspace 5 output HDMI-A-1
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+w exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 
     # Move your focus around
@@ -153,15 +154,15 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 bar {
     position top
-
-    # status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
     status_command exec $HOME/.config/i3status/statusbar.sh
+	font "Fira Code semi-bold 10"
+	height 28
 
-    #colors {
-    #    statusline #ffffff
-    #    background #323232
-    #    inactive_workspace #32323200 #32323200 #5c5c5c
-    #}
+    colors {
+        statusline #ffffff
+        background #32333a
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
 }
 
 include /etc/sway/config.d/*
