@@ -6,6 +6,9 @@
 #[[ -z $XDG_CONFIG_HOME ]] && export XDG_CONFIG_HOME="$HOME/.config"
 #stty -ixon
 
+export XDG_PICTURES_DIR="$HOME/screenshots"
+
+
 ## OPTIONS ##
 
 shopt -s cmdhist
@@ -31,10 +34,18 @@ export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore .ignore --ignore .git --nocol
 
 ## BINDINGS ##
 
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape
+# input type:keyboard xkb_options caps:escape
+# setxkbmap -device -option caps:escape
+# setxkbmap -device caps:escape
+
+if [[ -f $HOME/.config/consolekeymap ]]; then
+	sudo loadkeys $HOME/.config/consolekeymap
+fi
+
 bind 'TAB':menu-complete
-#bind "set show-all-if-ambiguous on"
-#bind "set menu-complete-display-prefix on"
+bind "set show-all-if-ambiguous on"
+bind "set menu-complete-display-prefix on"
 
 
 ## FUNCTIONS ##
@@ -104,12 +115,9 @@ fi
 
 if [[ -f /usr/bin/neofetch ]] && [[ -f ~/scripts/neo.sh ]]; then
 	echo
-	#/usr/bin/neofetch --color_blocks off
-	#/usr/bin/neofetch --ascii_colors 7 7 --colors 7 7 6 4 4 6 --underline off -gtk2 off -gtk3 off
 	. ~/scripts/neo.sh
 else
 	echo
 	echo 'Welcome, Caden'
 	echo
 fi
-
