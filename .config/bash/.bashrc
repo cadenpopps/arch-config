@@ -8,6 +8,7 @@
 
 export XDG_PICTURES_DIR="$HOME/screenshots"
 
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
 ## OPTIONS ##
 

@@ -6,6 +6,11 @@ set $right l
 
 set $term alacritty
 
+hide_edge_borders both
+hide_edge_borders smart
+hide_edge_borders --i3 both
+hide_edge_borders --i3 smart
+
 # Pass final command to swaymsg -- resulting window will open on the correct workspace
 set $menu ~/scripts/rofi-launcher.sh | xargs swaymsg exec --
 
