@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/cadenpopps/A1-cgp170000/maze51/META-INF'
 let g:netrw_dirhist_2='/home/cadenpopps/.config/sway'
 let g:netrw_dirhist_1='/home/cadenpopps/.gnupg'
 let g:netrw_dirhist_0='/home/cadenpopps/.gnupg/crls.d'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/home/cadenpopps/.gnupg'
 let g:netrw_dirhist_6='/etc/profile.d'
 let g:netrw_dirhist_5='/home/cadenpopps/.config/sway'
 let g:netrw_dirhist_4='/home/cadenpopps/.config/bash'
-let g:netrw_dirhist_3='/home/cadenpopps/.config/sway'
