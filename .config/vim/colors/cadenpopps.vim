@@ -90,45 +90,62 @@ hi htmlTagName ctermfg=174 ctermbg=none cterm=none
 
 
 "CSS Specific
-hi cssNoise ctermfg=174 ctermbg=none cterm=none
-hi cssColor ctermfg=none ctermbg=none cterm=none
+hi cssNoise ctermfg=243 ctermbg=none cterm=none
+hi cssFunctionComma ctermfg=243 ctermbg=none cterm=none
+hi cssColor ctermfg=224 ctermbg=none cterm=none
+
+hi cssDefinition ctermfg=174 ctermbg=none cterm=none
+hi cssVendor ctermfg=174 ctermbg=none cterm=none
+hi cssCustomProp ctermfg=174 ctermbg=none cterm=bold
+
 hi cssTagName ctermfg=189 ctermbg=none cterm=none
-hi cssPseudoClass ctermfg=none ctermbg=none cterm=none
-hi cssPseudoClassID ctermfg=none ctermbg=none cterm=none
-hi cssClassName ctermfg=none ctermbg=none cterm=none
-hi cssClassNameDot ctermfg=none ctermbg=none cterm=none
-hi cssBraces ctermfg=none ctermbg=none cterm=none
+hi cssClassName ctermfg=189 ctermbg=none cterm=none
+hi cssClassNameDot ctermfg=189 ctermbg=none cterm=none
+hi cssPseudoClass ctermfg=189 ctermbg=none cterm=none
+hi cssPseudoClassID ctermfg=189 ctermbg=none cterm=none
+hi cssIdentifier ctermfg=189 ctermbg=none cterm=none
+hi cssBraces ctermfg=189 ctermbg=none cterm=none
+
 hi cssFunction ctermfg=224 ctermbg=none cterm=none
 hi cssFunctionName ctermfg=224 ctermbg=none cterm=none
-hi cssAtRule ctermfg=174 ctermbg=none cterm=none
+hi cssAtRule ctermfg=188 ctermbg=none cterm=none
+
+
 hi cssAttrRegion ctermfg=224 ctermbg=none cterm=none
-hi cssUIAttr ctermfg=none ctermbg=none cterm=none
-hi cssPositioningAttr ctermfg=none ctermbg=none cterm=none
-hi cssFontAttr ctermfg=none ctermbg=none cterm=none
-hi cssTextAttr ctermfg=none ctermbg=none cterm=none
-hi cssFlexibleBoxAttr ctermfg=none ctermbg=none cterm=none
-hi cssBoxAttr ctermfg=none ctermbg=none cterm=none
-hi cssTransitionAttr ctermfg=none ctermbg=none cterm=none
-hi cssCommonAttr ctermfg=none ctermbg=none cterm=none
-hi cssBorderAttr ctermfg=none ctermbg=none cterm=none
-hi cssMultiColumnAttr ctermfg=none ctermbg=none cterm=none
-hi cssDefinition ctermfg=189 ctermbg=none cterm=none
-hi cssFontProp ctermfg=none ctermbg=none cterm=none
-hi cssBoxProp ctermfg=none ctermbg=none cterm=none
-hi cssPageProp ctermfg=none ctermbg=none cterm=none
-hi cssTextProp ctermfg=none ctermbg=none cterm=none
-hi cssPositioningProp ctermfg=none ctermbg=none cterm=none
-hi cssKeyFrameProp ctermfg=none ctermbg=none cterm=none
-hi cssMediaProp ctermfg=none ctermbg=none cterm=none
-hi cssFlexibleBoxProp ctermfg=none ctermbg=none cterm=none
-hi cssTransitionProp ctermfg=none ctermbg=none cterm=none
-hi cssBorderProp ctermfg=none ctermbg=none cterm=none
-hi cssUIProp ctermfg=none ctermbg=none cterm=none
-hi cssMultiColumnProp ctermfg=none ctermbg=none cterm=none
-hi cssTransformProp ctermfg=none ctermbg=none cterm=none
-hi cssIEUIProp ctermfg=none ctermbg=none cterm=none
-hi cssBackgroundProp ctermfg=none ctermbg=none cterm=none
-hi cssInteractProp ctermfg=none ctermbg=none cterm=none
+hi cssFunction ctermfg=224 ctermbg=none cterm=none
+hi cssFunctionName ctermfg=224 ctermbg=none cterm=none
+hi cssValueLength ctermfg=224 ctermbg=none cterm=none
+hi cssValueTime ctermfg=224 ctermbg=none cterm=none
+hi cssValueNumber ctermfg=224 ctermbg=none cterm=none
+hi cssUnitDecorators ctermfg=224 ctermbg=none cterm=none
+hi cssUIAttr ctermfg=224 ctermbg=none cterm=none
+hi cssPositioningAttr ctermfg=224 ctermbg=none cterm=none
+hi cssFontAttr ctermfg=224 ctermbg=none cterm=none
+hi cssTextAttr ctermfg=224 ctermbg=none cterm=none
+hi cssFlexibleBoxAttr ctermfg=224 ctermbg=none cterm=none
+hi cssBoxAttr ctermfg=224 ctermbg=none cterm=none
+hi cssTransitionAttr ctermfg=224 ctermbg=none cterm=none
+hi cssCommonAttr ctermfg=224 ctermbg=none cterm=none
+hi cssBorderAttr ctermfg=224 ctermbg=none cterm=none
+hi cssMultiColumnAttr ctermfg=224 ctermbg=none cterm=none
+
+
+" hi cssFontProp ctermfg=none ctermbg=none cterm=none
+" hi cssBoxProp ctermfg=none ctermbg=none cterm=none
+" hi cssPageProp ctermfg=none ctermbg=none cterm=none
+" hi cssTextProp ctermfg=none ctermbg=none cterm=none
+" hi cssPositioningProp ctermfg=none ctermbg=none cterm=none
+" hi cssKeyFrameProp ctermfg=none ctermbg=none cterm=none
+" hi cssMediaProp ctermfg=none ctermbg=none cterm=none
+" hi cssFlexibleBoxProp ctermfg=none ctermbg=none cterm=none
+" hi cssTransitionProp ctermfg=none ctermbg=none cterm=none
+" hi cssBorderProp ctermfg=none ctermbg=none cterm=none
+" hi cssUIProp ctermfg=none ctermbg=none cterm=none
+" hi cssMultiColumnProp ctermfg=none ctermbg=none cterm=none
+" hi cssTransformProp ctermfg=none ctermbg=none cterm=none
+" hi cssIEUIProp ctermfg=none ctermbg=none cterm=none
+" hi cssBackgroundProp ctermfg=none ctermbg=none cterm=none
+" hi cssInteractProp ctermfg=none ctermbg=none cterm=none
 
 
 " Menu
